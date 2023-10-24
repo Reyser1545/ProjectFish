@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ปลาทอง</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<style>
+    html {
+        background-image: url(https://wallpaperaccess.com/full/4687504.jpg);
+    }
+
+    .Fish {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .Search {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .container-typefish {
+        background-color: rgba(0, 0, 0, 0.616);
+        margin: 0px;
+        padding: 10px;
+
+    }
+
+    .about {
+        display: inline-flex;
+        text-align: center;
+        list-style: none;
+        background-color: rgba(102, 90, 90, 0.5);
+        color: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15%;
+    }
+
+    .footer {
+        grid-template-columns: 80% auto;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .Last div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btop {
+        margin-left: 25px;
+    }
+
+    @media (max-width: 500px) {
+        p {
+            font-size: 16px;
+        }
+
+        li {
+            font-size: 16px;
+        }
+    }
+
+    img {
+        width: 30%;
+        float: left;
+        margin-right: 10px;
+        border-radius: 20%;
+    }
+
+    p {
+        margin-left: 10px;
+        color: rgba(240, 248, 255, 0.842);
+    }
+
+    li {
+        color: rgba(240, 248, 255, 0.842);
+    }
+</style>
+<script>
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+// create a function to update the date and time
+function updateDateTime() {
+        // create a new `Date` object
+        const now = new Date();
+
+        // get the current date and time as a string
+        const currentDateTime = now.toLocaleString();
+
+        // update the `textContent` property of the `span` element with the `id` of `datetime`
+        document.querySelector('#datetime').textContent = currentDateTime;
+      }
+
+      // call the `updateDateTime` function every second
+      setInterval(updateDateTime, 1000);
+</script>
+
+<body>
+    <button type="button" onclick=""><a href="/fish">Menu</a></button>
+    <span style="font-size: 20px;" id="datetime"></span>
+    <div class="Fish">FishInfo</div>
+
+    <div style="margin-left: 14%; margin-bottom: 10px; " class="search_box">
+        <form action="" id="form2">
+            <div>
+                <input style="width: 70%;" type="text" id="search">
+                <input type="button" id="submit_form" onclick="checkInput()" value="Search">
+            </div>
+        </form>
+    </div>
+
+    <div style="width: auto;" class="container-typefish">
+        <div class="TypeFish">
+            <h2 style="color: #fff; text-align: center; margin:30px">ปลาทอง</h2>
+            <img src="https://img.kapook.com/u/2022/wittawat_ch/12-dec22/g01.jpg">
+            <p> ปลาทอง เป็นอีกหนึ่งปลาสวยงามที่หลายคนนิยมเลี้ยง เพราะนอกจากจะมีสีสันสวยงามแล้ว
+                ยังมีความเชื่อว่าเป็นปลามงคลด้วย สำหรับคนที่สนใจอยากเลี้ยงปลาทอง
+                วันนี้กระปุกดอทคอมจะพาไปทำความรู้จักปลาชนิดนี้ให้มากขึ้นกัน</p>
+            <hr>
+            <br>
+            <h3>ประวัติของปลาทอง</h3>
+            <p> เดิมปลาทองมีลักษณะคล้ายกับปลาไน ไม่ได้สวยงามเหมือนในปัจจุบัน กระทั่งประมาณปี ค.ศ. 1243-1343
+                ชาวจีนเริ่มนิยมนำปลาทองมาเลี้ยงในบ่อน้ำบริเวณบ้านมากขึ้น
+                ก่อนจะนำไปสู่การเพาะพันธุ์เพื่อค้าขายและเกิดเป็นสายพันธุ์ปลาทองที่มีความสวยงามมากขึ้น
+                และเป็นที่นิยมเลี้ยงไปทั่วโลก ไม่ว่าจะเป็นญี่ปุ่น อเมริกา อังกฤษ รวมถึงในประเทศไทย
+
+                เนื่องจากคำว่าปลาทองในภาษาจีนคือคำว่า "หยู" ซึ่งพ้องกับคำว่า "อุดมสมบูรณ์"
+                ทำให้มีความเชื่อเกี่ยวกับปลาทองว่า เป็นปลามงคล หากเลี้ยงแล้วจะช่วยเสริมฮวงจุ้ยด้านโชคลาภการเงินนั่นเอง
+            </p><br>
+            <hr><br>
+            <h3>วิธีเลี้ยงปลาทอง</h3>
+            <p>การเลี้ยงปลาทองส่วนใหญ่จะเลี้ยงในตู้กระจกใส แต่หากจะเลี้ยงในบ่อน้ำ เช่น บ่อซีเมนต์
+                ควรจัดให้อยู่ในบริเวณที่มีแสงสว่าง ไม่จ้าจนเกินไป หรือาจจะใช้ตาข่ายช่วยพรางแสงและความร้อนประมาณ 60%
+
+                น้ำที่ใช้ควรเป็นน้ำสะอาดไม่มีคลอรีน หากใช้น้ำประปาควรวางน้ำทิ้งไว้ให้คลอรีนระเหยก่อนนำปลามาปล่อย
+                หรือใช้เครื่องกรองน้ำ ใช้สารเคมีโซเดียมไธโอซัลเฟตละลายลงในน้ำ เพื่อช่วยลดคลอรีนก็ได้
+                และรักษาอุณหภูมิน้ำให้อยู่ที่ประมาณ 28-35 องศาเซลเซียส ที่สำคัญไม่ว่าจะเลี้ยงในตู้ปลาหรือบ่อน้ำ
+                ควรมีระบบช่วยหมุนเวียนน้ำ เช่น น้ำพุ น้ำตก เครื่องกรองน้ำ เพื่อช่วยเติมออกซิเจน
+
+                ทั้งนี้ ก่อนปล่อยปลาทองลงในน้ำที่เตรียมไว้ ควรแช่ถุงลงในตู้เลี้ยงปลาประมาณ 10-15 นาที
+                เพื่อให้อุณหภูมิของน้ำในถุงกับในอ่างถ่ายเทเข้าหากันจนใกล้เคียงกัน แล้วค่อยปล่อยปลาลงไป
+
+                การเลี้ยงปลาทอง ไม่ใช่เรื่องง่าย แต่ก็ไม่ใช่เรื่องยาก เพียงแค่ใส่ใจกับภาชนะเลี้ยง สภาพน้ำ การให้อาหาร
+                และหมั่นสังเกตเจ้าปลาตัวโปรดของคุณอย่างสม่ำเสมอ ก็จะได้ปลาทองสวย ๆ ไว้เชยชมไปนาน ๆ แล้วน</p><br>
+            <hr>
+            <img src="https://cdn-cms.pgimgs.com/static/2021/07/shutterstock_310009718.jpg">
+            <br>
+            <h3>อาหาร และการให้อาหาร</h3>
+            <p>การให้อาหาร มักใช้อาหารสำเร็จรูป โดยเฉพาะในระยะการเลี้ยงในตู้ปลาหลังการอนุบาล โดยการแบ่งให้ เช้า-เย็น
+                ในปริมาณ 2-3% ของน้ำหนักตัวปลา และอาหารที่ให้นั้น ปลาจะต้องกินหมดภายใน 10-15 นาที
+                เพื่อป้องกันน้ำเน่าจากเศษอาหาร จึงจำเป็นต้องเปลี่ยนถ่ายน้ำทุกๆ 7 วัน</p>
+            <br>
+            <hr>
+            <h3>ลักษณะปลาทอง</h3>
+            <p> ปลาทอง มีชื่อภาษาอังกฤษว่า Goldfish มีถิ่นกำเนิดในประเทศจีน ปัจจุบันมีมากกว่า 200 ชนิด
+                ลักษณะขึ้นอยู่กับสายพันธุ์ จุดเด่นที่ทำให้ปลาทองแต่ละสายพันธุ์แตกต่างกัน ได้แก่ ส่วนตัว ตา ครีบหลัง
+                ครีบก้น และครีบหาง มีทั้งหางเดี่ยว หางเป็นพวง และหางคู่ มีอายุเฉลี่ยอยู่ที่ประมาณ 10-15 ปี
+            </p><br>
+            <hr><br><br>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="Last">
+            <a href="#" div class="about">Back to top
+        </div></a>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="./index.js"></script>

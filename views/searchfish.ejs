@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค้นหาปลา</title>
+</head>
+<style>
+    html {
+        background-image: url(https://wallpaperaccess.com/full/4687504.jpg);
+    }
+
+    .Fish {
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 100px;
+        background-color: rgba(0, 0, 0, 0.801);
+        color: white;
+        padding-bottom: 100px;
+    }
+
+    .Search {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    a{
+        text-decoration: 0;
+        color:white;
+    }
+    button{
+        background-color: brown;
+    }
+    img{
+        width: 350px;
+        height: 250px;
+        border: solid;
+        border-radius: 30%;
+        
+    }
+    .header{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    @media screen and (max-width: 1000px) and (min-width: 500px) {
+        img{
+        width: 150px;
+        height: 100px;
+        margin-top: 5px;
+        }
+        .Fish{
+            font-size: 10px;
+        }
+    }
+</style>
+<script>
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+    // create a function to update the date and time
+    function updateDateTime() {
+        // create a new `Date` object
+        const now = new Date();
+
+        // get the current date and time as a string
+        const currentDateTime = now.toLocaleString();
+
+        // update the `textContent` property of the `span` element with the `id` of `datetime`
+        document.querySelector('#datetime').textContent = currentDateTime;
+    }
+
+    // call the `updateDateTime` function every second
+    setInterval(updateDateTime, 1000);
+</script>
+
+<body>
+    <button type="button" onclick=""><a href="/Home">Home</a></button>
+    <button type="button" onclick=""><a href="/addfish">Add Fish</a></button>
+    <button type="button" onclick=""><a href="/deletefish">Delete Fish</a></button>
+    <button type="button" onclick=""><a href="/updatefish">Update Fish</a></button>
+    <button style="width: 15%;" type="button" onclick=""><a href="/searchfishname">Search</a></button>
+    <span style="font-size: 20px;" id="datetime"></span>
+    <div style="padding-top: 20px;" class="header">FishInfo</div>
+    <div style="border: solid;" class="Fish">
+        <center>
+        <h2><%=FishData.Name%></h2>
+    <br>
+        <h2><%=FishData.Description%></h2>
+    <br>
+        <img src= '<%=FishData.ImageUrl%>'>
+    <br>
+</center>
+</div>
+</body>
+</html>

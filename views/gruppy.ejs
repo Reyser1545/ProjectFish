@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ปลาหางนกยูง</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<style>
+    html {
+        background-image: url(https://wallpaperaccess.com/full/4687504.jpg);
+    }
+
+    .Fish {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .Search {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .container-typefish {
+        background-color: rgba(0, 0, 0, 0.616);
+        margin: 0px;
+        padding: 10px;
+
+    }
+
+    .about {
+        display: inline-flex;
+        text-align: center;
+        list-style: none;
+        background-color: rgba(102, 90, 90, 0.5);
+        color: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15%;
+    }
+
+    .footer {
+        grid-template-columns: 80% auto;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .Last div {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .btop {
+        margin-left: 25px;
+    }
+
+    @media (max-width: 500px) {
+        p {
+            font-size: 16px;
+        }
+
+        li {
+            font-size: 16px;
+        }
+    }
+
+    img {
+        width: 30%;
+        float: left;
+        margin-right: 10px;
+        border-radius: 20%;
+    }
+
+    p {
+        margin-left: 10px;
+        color: rgba(240, 248, 255, 0.842);
+    }
+
+    li {
+        color: rgba(240, 248, 255, 0.842);
+    }
+</style>
+<script>
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+    // create a function to update the date and time
+    function updateDateTime() {
+        // create a new `Date` object
+        const now = new Date();
+
+        // get the current date and time as a string
+        const currentDateTime = now.toLocaleString();
+
+        // update the `textContent` property of the `span` element with the `id` of `datetime`
+        document.querySelector('#datetime').textContent = currentDateTime;
+    }
+
+    // call the `updateDateTime` function every second
+    setInterval(updateDateTime, 1000);
+</script>
+
+<body>
+    <button type="button" onclick=""><a href="/fish">Menu</a></button>
+    <span style="font-size: 20px;" id="datetime"></span>
+    <div class="Fish">FishInfo</div>
+
+    <div style="margin-left: 14%; margin-bottom: 10px; " class="search_box">
+        <form action="" id="form2">
+            <div>
+                <input style="width: 70%;" type="text" id="search">
+                <input type="button" id="submit_form" onclick="checkInput()" value="Search">
+            </div>
+        </form>
+    </div>
+
+    <div style="width: auto;" class="container-typefish">
+        <div class="TypeFish">
+            <h2 style="color: #fff; text-align: center; margin:30px">ปลาหางนกยูง</h2>
+            <img src="https://img.kapook.com/u/2022/sireeporn/Pet-01/g03.jpg">
+            <p> ด้วยสีสันที่สวยงามและสะดุดตาเลยทำให้ ปลาหางนกยูง เป็นปลาอีกหนึ่งชนิดที่คนนิยมนำมาเลี้ยง
+                แต่ทว่าแม้จะดูเหมือนเลี้ยงง่าย แต่จริง ๆ แล้วถ้าอยากให้พวกมันมีสีสันสดใสสวยงาม สภาพสมบูรณ์
+                และมีสุขภาพที่ดี
+                ไม่มีโรคแล้วละก็ มาดูวิธีเลี้ยงปลาหางนกยูงที่ถูกต้องพร้อมทำความรู้จักพวกมันให้มากขึ้นกัน </p>
+            <hr>
+            <h3>ประวัติ</h3>
+            <p> ปลาหางนกยูง มีชื่อเรียกภาษาอังกฤษว่า Guppy หรือ Millions Fish หรือ Live Bearing Tooth Carp
+                มีถิ่นกำเนิดในทวีปอเมริกาใต้ มักพบได้ในแหล่งน้ำตามธรรมชาติ เช่น หมู่เกาะแคริบเบียนและแถบลุ่มน้ำแอมะซอน
+                ต่อมาได้มีการพัฒนาสายพันธุ์จนกลายเป็นปลาสวยงามน้ำจืดอีกหนึ่งชนิดที่คนนิยมเลี้ยง</p><br>
+            <hr>
+            <h3>ลักษณะปลาหางนกยูง</h3>
+            <p> ปลาหางนกยูง เป็นปลาขนาดเล็ก มีขนาดลำตัวประมาณ 3-7 เซนติเมตร โดยตัวเมียจะมีขนาดใหญ่กว่าตัวผู้
+                ในขณะที่ตัวผู้จะมีสีสันและลวดลายบริเวณหางโดดเด่นกว่าตัวเมีย ซึ่งเป็นจุดที่ใช้ในการคัดแยกสายพันธุ์
+                นอกจากนี้ยังเป็นสายพันธุ์ปลาที่โตไวและเลี้ยงง่ายอีกด้วย
+            </p><br>
+            <hr>
+            <h3>วิธีเลี้ยงปลาหางนกยูง</h3>
+            <p>ปลาหางนกยูงชอบอยู่รวมกันเป็นฝูง แต่เนื่องจากสามารถผสมพันธุ์ได้ตั้งแต่ 3 เดือน
+                ดังนั้นควรเลี้ยงตัวเมียกับตัวผู้แยกกัน เพื่อไม่ไม่ปลาครอกเดียวกันผสมพันธุ์กันเอง
+                โดยน้ำที่ใช้เลี้ยงควรเป็นน้ำสะอาด
+                หากใช้น้ำบาดาลหรือน้ำประปาควรพักน้ำไว้ก่อน 1 สัปดาห์ เพื่อกำจัดคลอรีน นอกจากนี้ควรมีค่าความเป็นกรด-ด่าง
+                (pH) อยู่ที่ประมาณ 6.5-7.5 และอุณหภูมิน้ำประมาณ 25-19 องศาเซลเซียส
+                ส่วนบ่อหรือตู้ปลาก็ควรทำความสะอาดให้เรียบร้อยเช่นเดียวกัน พร้อมกับนำไปผึ่งแดดให้แห้ง และใส่น้ำทิ้งไว้ 1
+                คืน ก่อนนำปลาหางนกยูงลงไปปล่อย หากเป็นไปได้ควรเป็นน้ำที่มีการหมุนเวียนตลอดเวลา
+                นอกจากนี้ควรดูดเอาขยะออกสัปดาห์ละครั้ง โดยถ่ายน้ำก้นถังให้เหลือน้ำเก่าประมาณครึ่งหนึ่ง
+                และเติมน้ำใหม่เข้าไป ไม่ควรถ่ายน้ำออกทั้งตู้ เพราะอาจจะทำให้ปลาปรับตัวไม่ทันและตายได้
+                และควรล้างทำความสะอาดตู้ปลารวมถึงเปลี่ยนน้ำใหม่ทั้งหมดเดือนละครั้ง</p><br>
+            <hr>
+            <img src="https://img.kapook.com/u/2022/sireeporn/Pet-01/g04.jpg">
+            <h3>โรคที่ควรระวัง</h3>
+            <p>แม้ปลาหางนกยูงจะสามารถปรับตัวได้ง่ายในสภาพแวดล้อมต่าง ๆ แต่ก็มีโรคที่ต้องระวังเช่นกัน คือ โรคจุดขาว
+                โรคจากปลิงใส โรคจากหนอนสมอ และโรคแบคทีเรีย
+                ซึ่งอาการเบื้องต้นสามารถสังเกตเห็นได้จากความผิดปกติภายนอกทั้งลำตัวและหาง
+                นอกจากนี้อาจมีอาการท้องบวมหรือเกล็ดล่อนร่วมด้วย
+                หากพบปลาที่เป็นโรคควรแยกออกมาจากฝูงและรักษาตามอาการที่เจอ พร้อมกับทำความสะอาดบ่อหรือตู้ปลาทันที
+                เพื่อป้องกันไม่ให้ปลาตัวอื่น ๆ ติดโรค
+                โดยสามารถหาซื้อสารเคมีหรือยาสำหรับรักษาโรคได้ที่ร้านอุปกรณ์เลี้ยงปลาสวยงามทั่วไป
+                ปลาหางนกยูงถือเป็นปลาสวยงามอีกหนึ่งชนิดที่หลายคนนิยมเลี้ยง แต่อย่างไรก็ตาม
+                นอกจากการให้อาหารที่เหมาะสมแล้ว อย่าลืมดูแลรักษาความสะอาดบ่อหรือตู้ปลาด้วย เพื่อป้องกันโรคต่าง ๆ
+                ที่จะตามมา</p>
+            <br>
+            <hr>
+            <h3>อาหารปลาหางนกยูง</h3>
+            <p>ปลาหางนกยูงกินได้ทั้งพืชและสัตว์น้ำขนาดเล็ก เช่น ลูกน้ำ ไรแดง ไรทะเล รวมถึงอาหารปลาสำเร็จรูป
+                หากเป็นอาหารสดควรนำมาทำความสะอาดก่อน โดยการแช่ในด่างทับทิมประมาณ 10-20 วินาที ก่อนนำไปให้ปลากินเป็นอาหาร
+                และให้อาหารวันละ 2 ครั้ง คือ ตอนเช้ากับตอนเย็น
+                หากปลานกยูงกินอาหารไม่หมดควรตักเศษอาหารที่เหลือทิ้งทันที</p><br><br>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="Last">
+            <a href="#" div class="about">Back to top
+        </div></a>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="./index.js"></script>

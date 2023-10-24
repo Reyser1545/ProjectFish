@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ปลากัด</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<style>
+    html {
+        background-image: url(https://wallpaperaccess.com/full/4687504.jpg);
+    }
+
+    .Fish {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .Search {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .container-typefish {
+        background-color: rgba(0, 0, 0, 0.616);
+        margin: 0px;
+        padding: 10px;
+
+    }
+
+    .about {
+        display: inline-flex;
+        text-align: center;
+        list-style: none;
+        background-color: rgba(102, 90, 90, 0.5);
+        color: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15%;
+    }
+
+    .footer {
+        grid-template-columns: 80% auto;
+        text-align: right;
+        text-decoration: none;
+    }
+
+    .Last div {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .btop {
+        margin-left: 25px;
+    }
+
+    @media (max-width: 500px) {
+        p {
+            font-size: 16px;
+        }
+
+        li {
+            font-size: 16px;
+        }
+    }
+
+    img {
+        width: 30%;
+        float: left;
+        margin-right: 10px;
+        border-radius: 20%;
+    }
+
+    p {
+        margin-left: 10px;
+        color: rgba(240, 248, 255, 0.842);
+    }
+
+    li {
+        color: rgba(240, 248, 255, 0.842);
+    }
+</style>
+<script>
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+    // create a function to update the date and time
+    function updateDateTime() {
+        // create a new `Date` object
+        const now = new Date();
+
+        // get the current date and time as a string
+        const currentDateTime = now.toLocaleString();
+
+        // update the `textContent` property of the `span` element with the `id` of `datetime`
+        document.querySelector('#datetime').textContent = currentDateTime;
+    }
+
+    // call the `updateDateTime` function every second
+    setInterval(updateDateTime, 1000);
+</script>
+
+<body>
+    <button type="button" onclick=""><a href="/fish">Menu</a></button>
+    <span style="font-size: 20px;" id="datetime"></span>
+    <div class="Fish">FishInfo</div>
+
+    <div style="margin-left: 14%; margin-bottom: 10px; " class="search_box">
+        <form action="" id="form2">
+            <div>
+                <input style="width: 70%;" type="text" id="search">
+                <input type="button" id="submit_form" onclick="checkInput()" value="Search">
+            </div>
+        </form>
+    </div>
+
+    <div style="width: auto;" class="container-typefish">
+        <div class="TypeFish">
+            <h2 style="color: #fff
+            ; text-align: center; margin:30px">ปลากัด</h2>
+            <img src="https://inwfile.com/s-dy/x6inpj.jpg">
+            <p>ปลากัด มีชื่อสามัญว่า Siamese Fighting Fish เป็นปลาสวยงามที่สร้างชื่อเสียงให้กับประเทศไทยมานานแล้ว
+                เนื่องจากเป็นปลาสวยงามที่นอกจากจะมีสีสันสดเข้มสวยงามสะดุดตามากแล้ว
+                ยังเป็นปลาที่จัดว่าเป็นยอดนักสู้ตัวฉกาจอย่างยิ่ง
+                โดยเฉพาะปลากัดที่ไปจากประเทศไทยจัดว่าเป็นปลาที่กัดเก่งและมีความทรหดมากที่สุด
+                ทำให้ได้รับความนิยมจากประเทศต่างๆทั่วโลก ในประเทศไทยนิยมเลี้ยงปลากัดมานานแล้ว
+                และได้เน้นเป็นการเลี้ยงเพื่อเกมกีฬาโดยเฉพาะมีการจัดตั้งเป็นบ่อนการพนัน
+                ทางราชการจะมีการอนุญาตให้เปิดสถานที่สำหรับเดิมพันการกัดปลา เรียก บ่อนปลากัด หรือ บ่อนกัดปลา
+                มาตั้งแต่โบราณจนกระทั่งปัจจุบัน
+                การเลี้ยงปลากัดเป็นปลาสวยงามมักนิยมเลี้ยงในขวดหรือโหลขนาดเล็ก ไม่นิยมเลี้ยงร่วมกับปลาชนิดอื่น
+                เพราะเป็นปลาที่ชอบสร้างอาณาเขตและมักจะไล่กัดปลาที่มีขนาดไล่เลี่ยกัน ซึ่งในช่วงนี้ปลาจะมีสีสดเข้มสวยงาม
+                แต่ถ้านำไปเลี้ยงกับปลาขนาดใหญ่ปลาจะตื่นตกใจ เหมือนกับการแพ้คู่ต่อสู้ ในช่วงนี้ปลาก็จะสีซีดดูไม่สวยงาม
+                จึงจำเป็นต้องเลี้ยงปลากัดไว้เพียงตัวเดียวในภาชนะที่ไม่ใหญ่มากนัก
+                ปลาก็จะมีความรู้สึกว่าสามารถสร้างอาณาเขตของตัวเองไว้ได้ก็จะมีสีสันสดใสสวยงาม จัดว่าเป็นปลาที่ติดตลาด
+                ทั้งตลาดภายในประเทศและตลาดต่างประเทศ สามารถจำหน่ายได้ดีตลอดปี โดยเฉพาะเด็กจะชอบหาซื้อปลากัดไปเลี้ยง
+                เพื่อนำไปกัดแข่งขันกัน แล้วก็หาซื้อปลาตัวใหม่อยู่เสมอ</p><br>
+            <hr>
+            <h3>ประวัติของปลากัด </h3>
+            <p> ปลากัดเป็นปลาพื้นบ้านของไทย ในธรรมชาติชอบอาศัยอยู่ในแหล่งน้ำนิ่ง เช่น หนอง บึง หรือชายทุ่งนา
+                โดยมักพบตามชายฝั่งที่ตื้นๆและมีพรรณไม้น้ำมาก เป็นปลาที่จัดอยู่ในกลุ่มเดียวกันกับพวก Labyrinth Fish
+                ได้แก่ พวกปลากระดี่ทั้งหลาย ซึ่งเป็นกลุ่มปลาที่มีอวัยวะช่วยหายใจ ทำให้ปลาอาศัยอยู่ในที่มีออกซิเจนต่ำได้
+                จึงทำให้สามารถเลี้ยงปลากัดในขวดต่างๆที่มีปากขวดแคบๆได้
+                ปลากัดจัดว่าเป็นปลาที่กินเนื้อเป็นอาหาร โดยจะชอบกินแมลงและตัวอ่อนของแมลงต่างๆ (Insectivores)
+                .
+            </p><br>
+            <hr><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Betta_splendens_fighting.JPG">
+            <h3>ลักษณะรูปร่างของปลากัด </h3>
+            <p>ปลากัดจัดเป็นปลาขนาดเล็ก ลำตัวมีความยาวประมาณ 5 - 7 เซนติเมตร ลักษณะลำตัวเรียวยาว แบนข้าง
+                ปากมีขนาดเล็กเชิดขึ้นด้านบนเล็กน้อย ส่วนหัวมีเกล็ดปกคลุม ครีบก้นมีฐานครีบค่อนข้างยาว มีจำนวนก้านครีบ 23
+                - 26 อัน ครีบท้องเล็กยาว สีของลำตัวเป็นสีเทาแกมดำ
+                สีของครีบและเกล็ดบริเวณใกล้ครีบจะเป็นสีสดเข้มสีใดสีหนึ่งทั้งตัว
+                เช่น ปลากัดสีแดง จะมีครีบทุกครีบและเกล็ดที่อยู่ใกล้ครีบเป็นสีแดงทั้งหมด </p><br>
+            <hr>
+
+            <h3>การเลี้ยงปลากัด</h3>
+            <p>บ่อเลี้ยงปลากัดถ้าเป็นบ่อดินควรมีขนาด 10 - 30 ตารางเมตร ถ้าเป็นบ่อซีเมนต์ควรมีขนาด 2 - 6 ตารางเมตร
+                มีความลึกประมาณ 50 - 60 เซนติเมตร คัดแยกลูกปลาจากบ่ออนุบาลโดยคัดเอาเฉพาะปลาเพศผู้มาเลี้ยง
+                เนื่องจากปลาเพศผู้เป็นที่ต้องการของตลาดมากกว่าและราคาสูงกว่าปลาเพศเมียมาก ปล่อยเลี้ยงในอัตรา 150 - 200
+                ตัว ต่อเนื้อที่ 1 ตารางเมตรสำหรับบ่อดิน และอัตรา 100 - 150 ตัว ต่อเนื้อที่ 1 ตารางเมตรสำหรับบ่อซีเมนต์
+                แล้วเลี้ยงด้วยอาหารเม็ดลอยน้ำ นอกจากนั้นควรใส่พรรณไม้น้ำพวกสาหร่าย และสันตะวา
+                เพื่อป้องกันการทำอันตรายจากปลาด้วยกันเอง
+                ใช้เวลาเลี้ยงอีกประมาณ 50 - 60 วัน ปลาจะมีขนาดประมาณ 5 เซนติเมตร สามารถคัดแยกใส่ขวดเพื่อรอจำหน่ายต่อไป
+            </p>
+            <br>
+            <hr>
+            <h3>การลำเลียงปลากัด</h3>
+            <p>เนื่องจากปลากัดเป็นปลาที่มีอวัยวะช่วยหายใจที่จัดอยู่ในกลุ่มเดียวกันกับพวก Labyrinth Fish
+                จึงค่อนข้างมีความอดทน
+                ทำให้สามารถลำเลียงในภาชนะขนาดเล็กๆไปเป็นระยะทางไกลๆเป็นเวลานานได้โดยไม่ต้องมีการอัดออกซิเจน
+                วิธีการที่นิยมมากที่สุด คือการลำเลียงโดยบรรจุในถุงพลาสติกขนาดเล็กๆโดยไม่ต้องอัดออกซิเจน
+                และใช้กระดาษห่อด้านนอกเพื่อให้ปลาสงบนิ่งทำให้ใช้พลังงานน้อยลง หรือการใช้ภาชนะขนาดเล็กๆพอดีกับตัวปลา
+                ใส่น้ำพอท่วมตัวปลาโดยไม่ต้องปิดฝา แล้ววางเรียงซ้อนกันในกล่องโฟมอีกทีหนึ่ง
+                ก็จะสามารถลำเลียงปลากัดได้คราวละจำนวนมากและเป็นระยะทางไกล
+                หรือลำเลียงแบบรวมในถุงพลาสติคขนาดใหญ่โดยใส่ปลาจำนวนมากในแต่ละถุง</p>
+            <br>
+            <hr>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="Last">
+            <a href="#" div class="about">Back to top
+        </div></a>
+    </div>
+    </div>
+    </div>
+</body>
+<script src="./index.js"></script>

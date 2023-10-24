@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    html {
+        background-image: url(https://wallpaperaccess.com/full/4687504.jpg);
+        background-size: cover;
+    }
+
+    .Fish {
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .TypeFish {
+        font-size: 20px;
+        border: solid black;
+        width: auto;
+        margin-left: 14%;
+        margin-right: 14%;
+        background-color: rgba(12, 12, 12, 0.774);
+        color: #fff;
+        height: 90%;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+
+    .Search {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .about {
+        text-align: center;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0.247);
+        color: #fff;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 15%;
+        margin-right: 50px;
+    }
+
+    .contact {
+        text-align: center;
+        list-style: none;
+        background-color: rgba(102, 90, 90, 0.5);
+        color: #fff;
+        padding: 10px;
+        border-radius: 15%;
+        text-decoration: none;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 80% auto;
+        margin-left: 13%;
+        text-decoration: none;
+    }
+
+    .Last>div {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .btop {
+        margin-left: 25px;
+    }
+
+    img {
+        border: black;
+    }
+
+    img:hover {
+        border: solid rgb(255, 0, 0) !important;
+    }
+
+    .container-typefish .TypeFish img {
+        margin: 25px;
+        display: inline-flex;
+        text-align: center;
+    }
+    
+    a{
+        text-decoration: 0;
+        color: rgb(255, 255, 255);
+    }
+</style>
+<script>
+    function checkInput() {
+        var query = document.getElementById('search').value;
+        window.find(query);
+        return true;
+    }
+
+
+    // create a function to update the date and time
+    function updateDateTime() {
+        // create a new `Date` object
+        const now = new Date();
+
+        // get the current date and time as a string
+        const currentDateTime = now.toLocaleString();
+
+        // update the `textContent` property of the `span` element with the `id` of `datetime`
+        document.querySelector('#datetime').textContent = currentDateTime;
+    }
+
+    // call the `updateDateTime` function every second
+    setInterval(updateDateTime, 1000);
+</script>
+
+<body>
+    <button type="button" onclick=""><a href="/home">Home</a></button>
+    <span style="font-size: 20px;" id="datetime"></span>
+    <div class="Fish">MENU</div>
+
+    <div style="margin-left: 14%;" class="search_box">
+        <form action="" id="form2">
+            <div>
+                <input style="width: 70%;" type="text" id="search">
+                <input type="button" href="/search" name="search" id="submit_form" onclick="checkInput()" value="Search">
+            </div>
+        </form>
+    </div>
+
+    <div class="container-typefish">
+        <div style="font-size: 30px;" class="TypeFish">
+            <div class="molly">
+                <p><a style="color: rgb(255, 255, 255);" class="btn btn-sm btn-danger" href="/molly">ปลาสอด</a></p>
+                <p><a href="/molly"><img
+                            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3XNXgayuOiskF3AF3aQARWZQOkphRQTNz1DRYHML-F-XdclnafHqBsL2sIsSkH2ZZjBxseHciU7JjOnRbrh-xCwvCVXTgpREgxMc7a-u9gulr3lg67pwwFdNlREPrlDOpUti-gzVkXOJXLcxntPZB7bLdfuyySVNnDiXQfyFjMjJl-jOp0sOowa-P4psS/s1600-rw/albino-Sailfin-molly.jpg"
+                            style="width: 55%; border-radius: 40%;"></a></p>
+            </div>
+
+            <div class="Gruppy">
+                <p><a style="color: rgb(255, 255, 255);" class="btn btn-sm btn-danger" href="/gruppy">ปลาหางนกยูง</a>
+                </p>
+                <p><a href="/gruppy"><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/19/Trinidadian_guppy_%28Poecilia_reticulata%29_male_and_female.png"
+                            style="width: 55%; border-radius: 40%;"></a></p>
+            </div>
+
+            <div class="Angel">
+                <p><a style="color: rgb(255, 255, 255);" class="btn btn-sm btn-danger" href="/angel">ปลาเทวดา</a></p>
+                <p><a href="/angel"><img src="https://kaset.today/wp-content/uploads/2021/11/380.jpg"
+                            style="width: 55%; border-radius: 40%;"></a></p>
+            </div>
+
+            <div class="Zebra">
+                <p><a style="color: rgb(255, 255, 255);" class="btn btn-sm btn-danger" href="/zebra">ปลาม้าลาย</a></p>
+                <p><a href="/zebra"><img
+                            src="https://cms.dmpcdn.com/news/2023/07/26/26e89c00-2b84-11ee-92db-a9655cc6118e_original.png"
+                            style="width: 55%; border-radius: 40%;"></a></p>
+            </div>
+
+            <div class="GoldFish">
+                <p><a style="color: rgb(255, 255, 255);" class="btn btn-sm btn-danger" href="/goldfish">ปลาทอง</a></p>
+                <p><a href="/goldfish"><img src="https://img.kapook.com/u/2022/wittawat_ch/12-dec22/g01.jpg"
+                            style="width: 55%; border-radius: 40%;"></a></p>
+
+                <div class="Bite">
+                    <p><a style="color: rgb(255, 255, 255);" class="btn btn-sm btn-danger" href="/bite">ปลากัด</a></p>
+                    <p><a href="/bite"><img src="https://inwfile.com/s-dy/e91ioh.jpg"
+                                style="width: 55%; border-radius: 40%;"></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="Last">
+            <div class="about">จัดทำโดย นายณัฐพล คงสิริกำจร</a></div>
+            <div class="about"><a href="#top">Back to top</a></div>
+        </div>
+        
+    </div>
+    </div>
+</body>
+<script src="./index.js"></script>
